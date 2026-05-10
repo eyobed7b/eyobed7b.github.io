@@ -4999,14 +4999,13 @@ a img {
     font-size: 16px
 }
 .user-bigdata {
-    align-items: center;
-    /* align-items: center; */
     text-align: center;
     font-size: 60px;
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 .user-bigdata p {
     font-size: 16px

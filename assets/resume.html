@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eyobed Feleke — Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 10.5pt;
+      color: #222;
+      background: #fff;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 56px;
+      line-height: 1.5;
+    }
+
+    /* ── Header ── */
+    .header { text-align: center; margin-bottom: 18px; }
+
+    .header h1 {
+      font-family: 'Arial', sans-serif;
+      font-size: 26pt;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #111;
+      margin-bottom: 7px;
+    }
+
+    .contact {
+      font-family: 'Arial', sans-serif;
+      font-size: 9.5pt;
+      color: #444;
+    }
+    .contact a { color: #444; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    .contact .sep { margin: 0 7px; color: #bbb; }
+
+    /* ── Section ── */
+    .section { margin-bottom: 16px; }
+
+    .section-title {
+      font-family: 'Arial', sans-serif;
+      font-size: 10pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      color: #111;
+      border-bottom: 1.5px solid #222;
+      padding-bottom: 3px;
+      margin-bottom: 11px;
+    }
+
+    /* ── Entry ── */
+    .entry { margin-bottom: 13px; }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .entry-title {
+      font-family: 'Arial', sans-serif;
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .entry-date {
+      font-family: 'Arial', sans-serif;
+      font-size: 9.5pt;
+      color: #555;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .entry-subtitle {
+      font-family: 'Arial', sans-serif;
+      font-size: 9.5pt;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    p.desc {
+      font-size: 10pt;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    ul {
+      margin-left: 18px;
+      margin-bottom: 6px;
+    }
+    ul li {
+      font-size: 10pt;
+      color: #333;
+      margin-bottom: 2px;
+    }
+
+    .tech {
+      font-size: 9.5pt;
+      color: #444;
+      margin-top: 4px;
+    }
+    .tech strong { color: #222; }
+
+    /* ── Skills grid ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px 24px;
+    }
+
+    .skill-row {
+      display: flex;
+      font-size: 10pt;
+      gap: 6px;
+    }
+
+    .skill-label {
+      font-family: 'Arial', sans-serif;
+      font-weight: 700;
+      min-width: 105px;
+      color: #222;
+      flex-shrink: 0;
+    }
+
+    .skill-value { color: #333; }
+
+    /* ── Print ── */
+    @media print {
+      body { padding: 0; }
+      @page { margin: 0.55in 0.6in; size: A4; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <div class="header">
+    <h1>Eyobed Feleke</h1>
+    <div class="contact">
+      <a href="mailto:eyobed7b@gmail.com">eyobed7b@gmail.com</a>
+      <span class="sep">•</span>
+      +251 923 162 988
+      <span class="sep">•</span>
+      <a href="https://www.linkedin.com/in/eyobed-feleke-5157a9166/" target="_blank">LinkedIn</a>
+      <span class="sep">•</span>
+      <a href="https://github.com/eyobed7b" target="_blank">github.com/eyobed7b</a>
+      <span class="sep">•</span>
+      <a href="https://eyobed7b.github.io/" target="_blank">eyobed7b.github.io</a>
+      <span class="sep">•</span>
+      Addis Ababa, Ethiopia
+    </div>
+  </div>
+
+  <!-- ═══════════════ SUMMARY ═══════════════ -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="desc">
+      Results-driven Senior DataOps &amp; Full Stack Engineer with 4+ years of experience architecting
+      and operating large-scale data infrastructure, real-time streaming pipelines, and cloud-native
+      applications. Deep expertise across the full data engineering stack — from ingestion with Apache
+      Kafka and NiFi, through processing with Apache Spark and Airflow, to production-grade API delivery
+      via Spring Boot and Kubernetes. AWS Certified Cloud Practitioner with hands-on experience across a
+      broad range of managed cloud services. Supplementally trained in AI Engineering, with practical
+      knowledge of LLM application development using LangChain, Hugging Face, and the Claude API.
+      Strong academic foundation (GPA 3.72 / 4.0) complemented by intensive programs in Data Science
+      (ALX Africa) and AI Engineering (10 Academy).
+    </p>
+  </div>
+
+  <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <!-- Safaricom -->
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Senior DataOps Engineer</span>
+        <span class="entry-date">Aug 2023 — Present</span>
+      </div>
+      <div class="entry-subtitle">Safaricom PLC &nbsp;·&nbsp; Addis Ababa, Ethiopia</div>
+      <p class="desc">
+        Lead DataOps engineer operating across a hybrid cloud environment, responsible for designing
+        and maintaining mission-critical data infrastructure spanning on-premises Hadoop clusters and
+        AWS cloud services. Drive end-to-end pipeline delivery from architecture through deployment and
+        monitoring.
+      </p>
+      <ul>
+        <li>Designed and implemented scalable data pipelines for high-throughput ingestion, transformation, and delivery across on-premises and AWS environments.</li>
+        <li>Developed and deployed production-grade REST APIs using Spring Boot, orchestrated and auto-scaled via Kubernetes.</li>
+        <li>Optimized big data environments (Hive, HBase, Phoenix, Spark) to sustain high performance and horizontal scalability.</li>
+        <li>Managed a broad suite of AWS services — S3, Redshift, DynamoDB, RDS, Kinesis, EMR, Glue, DMS, and Athena — for cloud data management and analytics workloads.</li>
+        <li>Established and enforced code quality standards through unit test authorship and collaborative code reviews.</li>
+      </ul>
+      <p class="tech">
+        <strong>Technologies:</strong> Java, Groovy, Python, Spring Boot, Apache Spark, Apache Kafka,
+        Apache Airflow, Apache NiFi, Hive, HBase, Phoenix, Hadoop, PostgreSQL, Oracle, SQL, Git,
+        GitLab CI/CD, Docker, Kubernetes &nbsp;|&nbsp;
+        <strong>AWS:</strong> S3, Redshift, DynamoDB, RDS, Kinesis, EMR, Glue, DMS, Athena
+      </p>
+    </div>
+
+    <!-- Huawei -->
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Automation Engineer / Data Engineer</span>
+        <span class="entry-date">Apr 2022 — Aug 2023</span>
+      </div>
+      <div class="entry-subtitle">Huawei Technologies &nbsp;·&nbsp; Addis Ababa, Ethiopia</div>
+      <p class="desc">
+        Key engineering contributor on a distributed telecom alarm monitoring system integrating
+        third-party vendors (Huawei, Nokia) via CORBA interfaces. The platform runs on a private cloud
+        with virtualized infrastructure and delivers real-time alerts via SMS and email.
+      </p>
+      <ul>
+        <li>Built and maintained ETL pipelines using Apache Spark and Airflow for reliable batch and streaming job execution.</li>
+        <li>Engineered fault-tolerant data storage on Apache Hive backed by Hadoop HDFS for large-scale data persistence.</li>
+        <li>Developed REST APIs enabling communication between distributed system components and vendor integrations.</li>
+        <li>Ensured high availability through proactive service management, resource monitoring, and rapid incident resolution.</li>
+        <li>Maintained code quality via structured code reviews and unit testing; resolved production issues in collaboration with cross-functional teams.</li>
+      </ul>
+      <p class="tech">
+        <strong>Technologies:</strong> Python, Apache Spark, Apache Airflow, Apache Hive, Hadoop,
+        MySQL, Docker, Kubernetes, JavaScript, Shell Scripting (Linux), REST API, JSON
+      </p>
+    </div>
+
+    <!-- BeU -->
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Mobile Application Developer</span>
+        <span class="entry-date">Nov 2021 — May 2022</span>
+      </div>
+      <div class="entry-subtitle">BeU Delivery &nbsp;·&nbsp; Addis Ababa, Ethiopia</div>
+      <p class="desc">
+        Collaborated with a cross-functional team of engineers and UI/UX designers to build and ship
+        BeU Delivery — a food and goods delivery platform live on both the Apple App Store and
+        Google Play Store.
+      </p>
+      <ul>
+        <li>Developed cross-platform Android and iOS mobile application using Flutter and Dart.</li>
+        <li>Integrated multiple third-party services and REST APIs for ordering, payments, and real-time delivery tracking.</li>
+        <li>Authored unit test cases to validate core application flows and ensure release stability.</li>
+        <li>Managed the full release lifecycle, including publishing and versioning on Google Play Store and Apple App Store.</li>
+      </ul>
+      <p class="tech">
+        <strong>Technologies:</strong> Flutter, Dart, Firebase, REST APIs, Git
+      </p>
+    </div>
+  </div>
+
+  <!-- ═══════════════ EDUCATION ═══════════════ -->
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">B.Sc. Software Engineering</span>
+        <span class="entry-date">2017 — 2021</span>
+      </div>
+      <div class="entry-subtitle">
+        Addis Ababa Science and Technology University (AASTU) &nbsp;·&nbsp; GPA: 3.72 / 4.0
+      </div>
+      <ul>
+        <li>Teaching Assistant — Intro to Programming &amp; Client-Side Web Development</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Data Science Program &nbsp;·&nbsp; 13 Months</span>
+        <span class="entry-date">ALX Africa</span>
+      </div>
+      <div class="entry-subtitle">
+        Machine learning, statistical analysis, data engineering, Python data stack (Pandas, NumPy, Scikit-learn)
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">AI Engineering Program</span>
+        <span class="entry-date">10 Academy</span>
+      </div>
+      <div class="entry-subtitle">
+        LLM application development, LangChain ecosystem, AI agents, RAG systems, prompt engineering
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">AWS Certified Cloud Practitioner</span>
+        <span class="entry-date">Amazon Web Services</span>
+      </div>
+      <div class="entry-subtitle">
+        Foundational certification covering AWS cloud concepts, core services, security, architecture, and pricing models
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SKILLS ═══════════════ -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row">
+        <span class="skill-label">Languages</span>
+        <span class="skill-value">Java, Python, JavaScript, Groovy, Dart, SQL, Bash</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Big Data</span>
+        <span class="skill-value">Spark, Kafka, Hadoop, Hive, HBase, NiFi, Airflow, Flink</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Back-End</span>
+        <span class="skill-value">Spring Boot, Node.js, Express.js, REST API design</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Databases</span>
+        <span class="skill-value">PostgreSQL, MySQL, MongoDB, Oracle, HBase, DynamoDB</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Cloud (AWS)</span>
+        <span class="skill-value">S3, Redshift, EMR, Glue, Kinesis, Athena, RDS, DMS</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">AI / LLM</span>
+        <span class="skill-value">LangChain, Hugging Face, Claude API, RAG, Prompt Engineering</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">DevOps</span>
+        <span class="skill-value">Docker, Kubernetes, Git, GitLab CI/CD, Linux</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Mobile</span>
+        <span class="skill-value">Flutter, Dart, Firebase, App Store &amp; Play Store release</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
