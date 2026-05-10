@@ -444,6 +444,11 @@
       <p>&copy; Eyobed Feleke, 2022</p>
     </footer>
 
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" aria-label="Toggle theme">
+      <i class="fa fa-moon-o" id="theme-icon"></i>
+    </button>
+
     <!-- Import JS: Particles Theme -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Import JS: Sweet Scroll -->
@@ -452,5 +457,25 @@
     <script src="./assets/js/google-analytics.js"></script>
     <!-- Import JS: Main Script -->
     <script src="./assets/js/main.js"></script>
+    <!-- Theme Toggle Logic -->
+    <script>
+      (function () {
+        var toggle = document.getElementById('theme-toggle');
+        var icon   = document.getElementById('theme-icon');
+
+        if (localStorage.getItem('theme') === 'light') {
+          document.body.classList.add('light-mode');
+          icon.className = 'fa fa-moon-o';
+        } else {
+          icon.className = 'fa fa-sun-o';
+        }
+
+        toggle.addEventListener('click', function () {
+          var isLight = document.body.classList.toggle('light-mode');
+          icon.className = isLight ? 'fa fa-moon-o' : 'fa fa-sun-o';
+          localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+      })();
+    </script>
   </body>
 </html>
